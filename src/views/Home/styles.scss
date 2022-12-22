@@ -1,0 +1,277 @@
+.home {
+  display: flex;
+  min-height: 100vh;
+  
+  &-product {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+    &-wrap {
+      margin-top: 50px;
+
+      .navbar-product {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        img {
+          position: relative;
+          height: 18px;
+          width: auto;
+          cursor: pointer;
+          left: -20px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+
+      .title-product {
+        p {
+          font-size: 18px;
+          font-weight: 600;
+          color: gray;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+      }
+
+      .price-product {
+        p {
+          margin-top: 0;
+          margin-bottom: 60px;
+          font-size: 36px;
+          font-weight: 600;
+        }
+      }
+
+      .image-product {
+        height: 300px;
+        border-radius: 8px;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+
+    .loading-product {
+      margin-top: 250px;
+      font-weight: 600;
+    }
+  }
+
+  &-form {
+    width: 50%;
+    box-shadow: -5px 0px 5px 2px rgba(0,0,0,0.05);
+
+    &-wrap {
+      width: 500px;
+      margin-top: 50px;
+      margin-left: 120px;
+      padding-bottom: 50px;
+
+      .pay-divider {
+        margin-top: 50px;
+        border-top: 1px solid #ecf0f1;
+        display: flex;
+        justify-content: center;
+
+        &-text {
+          display: inline-block;
+          position: relative;
+          top: -10px;
+          color: gray;
+          text-align: center;
+          background-color: white;
+          padding: 0 8px;
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      .detail-form-text {
+        margin-top: 40px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      
+      .email-input {
+        margin-top: 25px;
+
+        p {
+          font-size: 18px;
+          font-weight: 600;
+          color: gray;
+          margin: 0;
+        }
+        
+        input {
+          margin-top: 8px;
+          width: 100%;
+          height: 35px;
+          border-radius: 8px;
+          border: none;
+          box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.20);
+        }
+      }
+
+      .shipping-addres-input {
+        margin-top: 25px;
+
+        &-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: gray;
+        }
+
+        .input-card {
+          box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.20);
+          border-radius: 8px;
+
+          .dropdown {
+            padding: 12px 8px;
+
+            select {
+              width: 100%;
+              font-size: 16px;
+              font-weight: 600;
+              color: #2c3e50;
+              border: none;
+            }
+          }
+
+          &-input-text {
+            padding: 12px 8px;
+            border-top: 1px solid rgba(0,0,0,0.20);
+
+            input {
+              width: 100%;
+              border: none;
+
+              &::placeholder {
+                font-size: 16px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+
+        .enter-address-manually {
+          font-size: 14px;
+          font-weight: 600;
+          color: #95a5a6;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      .card-information-form {
+        &-title {
+          color: gray;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        &-card {
+          box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.20);
+          border-radius: 8px;
+
+          &-input {
+            padding: 12px 15px;
+
+            input {
+              border: none;
+
+              &::placeholder {
+                font-size: 16px;
+                font-weight: 500;
+              }
+            }
+
+            .cards-provider {
+              display: flex;
+
+              .visa-card {
+                width: auto;
+                height: 20px;
+              }
+
+              .master-card {
+                width: auto;
+                height: 20px;
+              }
+            }
+
+            &.with-card {
+              display: flex;
+              justify-content: space-between;
+            }
+
+            &.flex-input {
+              display: flex;
+              padding: 0;
+
+              .flex-input-wrap {
+                width: 50%;
+                padding: 12px 15px;
+
+                .cvc-card {
+                  width: auto;
+                  height: 32px;
+                }
+
+                &.date-input {
+                  display: flex;
+                  align-items: center;
+
+                  input {
+                    width: 30px;
+
+                    &:first-child {
+                      margin-right: 10px;
+                    }
+
+                    &:last-child {
+                      margin-left: 10px;
+                    }
+                  }
+                }
+
+                &.cvc-input {
+                  display: flex;
+                  align-items: center;
+                }
+  
+                &:last-child {
+                  border-left: 1px solid rgba(0,0,0,0.20);
+                }
+              }
+            }
+
+            &:last-child {
+              border-top: 1px solid rgba(0,0,0,0.20);
+            }
+          }
+        }
+      }
+
+      .billing-address-check {
+        margin: 25px 0 40px 0;
+
+        label {
+          font-size: 16px;
+          font-weight: 600;
+          color: gray;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
